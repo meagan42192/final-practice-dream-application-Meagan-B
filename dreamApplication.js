@@ -5,7 +5,7 @@
 let prices = [5, 3, 10];
 let totalValues = prices.reduce((sum, price) => sum + price, 0);
 
-console.log("Total: $" + totalValues); //I am featuring the variable naming lesson. This gives the total price of each item for the user
+console.log("Total: $" + totalValues); //I am featuring the variable naming lesson. I also used the .reduce method from using arrays to give the total price of each item for the user
 
 let couponAmount = "10% off any item";
 console.log(parseInt(couponAmount)); //This is using the parseInt data type conversion method. This converts the integer amount from the string
@@ -41,28 +41,13 @@ let userData = ["Meagan", 34, {favoriteStore: "Schnucks", isPremium: false}, 250
 console.log(userData[0]);//logs the first item in the array
 
 
-// Using Arrays (.filter)
+// Using Arrays
 let groceryList = ["Milk", "Eggs", "Chicken", "Spinach", "Coffee", "Tacos"];
 
 // Add a new item
 groceryList.push("Apples");
 
-console.log(groceryList); // I built an array called groceryList and pushed a new item. ["Milk", "Eggs", "Chicken", "Apples"] This method shows how a user, either on a shared list or on the current list, adds a new item to their grocery list.
-
-
-let originalGroceryList = ["Coffee", "Bagels", "Avocados", "Salmon", "Cream Cheese"];
-let purchasedItems = ["Bagels"];
-
-// Remove purchased items
-let updatedList = originalGroceryList.filter(item => !purchasedItems.includes(item));
-
-console.log(updatedList); // ["Milk", "Chicken"] this method updates the list when an item has been purchased
-
-let dairy = ["Milk", "Yogurt", "Cheese", "Ice Cream"];
-let produce = ["Spinach", "Onions", "Strawberries", "Tomatoes", "Zucchini"];
-let meat = ["Cod", "Steak", "Chicken", "Bacon"];
-console.log(dairy[0]); //Provides the user with the first item on their dairy list
-
+console.log(groceryList); // I built an array called groceryList and pushed a new item to the end of the list. This method shows how a user, either on a shared list or on the current list, adds a new item to their grocery list.
 
 
 // Working With Loops

@@ -5,17 +5,17 @@
 let prices = [5, 3, 10];
 let totalValues = prices.reduce((sum, price) => sum + price, 0);
 
-console.log("Total: $" + totalValues); //I am featuring the variable naming lesson. I also used the .reduce method from using arrays to give the total price of each item for the user
+console.log("Total: $" + totalValues); //I am featuring the variable naming lesson. I declared two variables: prices and totalValues using camelCase. I also used the .reduce method from using arrays to give the total price of each item for the user
 
 let couponAmount = "10% off any item";
-console.log(parseInt(couponAmount)); //This is using the parseInt data type conversion method. This converts the integer amount from the string
+console.log(parseInt(couponAmount)); //This is using the parseInt data type conversion method. This converts the integer amount from the string. This will allow my application to derive the numerical coupon amount from a string. 
 
 
 // Stringing Characters Together
 let item = "Milk";
 let category = "Dairy";
 
-console.log(item + " has been added to the " + category + " category.");//This is highlighting the ability to add variables to a string. This shows a response to the user that when they add the item 'Milk' to their list, it automatically catgorizes as a Dairy item.
+console.log(item + " has been added to the " + category + " category.");//This is highlighting the ability to add variables to a string using concatenation with the + symbol. This works because none of my values are numbers. My goal of this code is to show a response to the user that when they add the item 'Milk' to their list, it automatically catgorizes as a Dairy item.
 
 let budgetRemaining = 12.99
 let result = `Your remaining budget is: $${budgetRemaining}\u{1f4b8}`;
@@ -32,13 +32,13 @@ if (totalBudgetAmount > budget) {
     console.log("You are over budget!\u{1F622}");
 } else {
     console.log("You are within budget\u{1F60A}");
-}; //From the Control Structures and Logic lesson, I used an if/else statement. This method sends an alert to the user if they are over their total budget amount or are within budget
+}; //From the Control Structures and Logic lesson, I used an if/else statement. This method sends an alert to the user if they are over their total budget amount or are within budget. I converted emoji's to unicode in this example as well. A smiley face for if they are in budge and a sad face if they are over. 
 
 
 
 // Building Arrays + Values/Data Types
-let userData = ["Meagan", 34, {favoriteStore: "Schnucks", isPremium: false}, 250.00]; //I created a mixed array that represents user data
-console.log(userData[0]);//logs the first item in the array
+let userData = ["Meagan", 34, {favoriteStore: "Schnucks", isPremium: false}, 250.00]; //I created a mixed array that represents relevant user data for my application. 
+console.log(userData[0]);//this console log logs the first item in the array.
 
 
 // Using Arrays
@@ -55,7 +55,7 @@ let currentGroceryList = ["Milk", "Eggs", "Chicken"];
 
 for (let i = 0; i < currentGroceryList.length; i++) {
     console.log(currentGroceryList[i]);
-}; //I used a for loop to print out each item on the grocery list for the user
+}; //I used a for loop to print out each item on the grocery list for the user. This allows the user to easily see what all items are on their list. 
 
 let dairyItems = {
     items: ["Milk", "Yogurt", "Cheese", "Ice Cream"],
@@ -69,5 +69,5 @@ for (let key in dairyItems) {
     if (key === "aisle") {
         console.log(dairyItems[key]);
     }
-}//This is showing how to use a for...in loop when working with objects to provide the aisle number to the user for dairy items.
+}//This is showing how to use a for...in loop when working with objects to provide the aisle number to the user for dairy items. Since my application categorizes the grocery items, this will be helpful when a user is in a specified aisle to quickly see what items in that category to add to their carts. 
 
